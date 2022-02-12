@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пример 62</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    
+    function v (valid) {
+      if (isNaN(valid) || valid.trim().length == 0 ) {
+        alert('Некорректное число!');
+        return 0;
+      }
+      else return 1;
+    }
+
+    const mult = (x, y) => x * y;
+
+    let x;
+    do {
+      x = prompt ('X=');
+    } while (!v(x));
+
+    let y;
+    do {
+      y = prompt('Y=');
+    } while (!v(y));
+
+    const string = `The multiplying of ${+x} and ${+y} is ${mult(+x, +y)}.`;
+    alert(string);
+
+  </script>
+</body>
+
+</html>
