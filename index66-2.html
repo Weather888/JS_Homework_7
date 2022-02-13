@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пример 66-2</title>
+</head>
+
+<body>
+  <script>
+  function vvf(datal) {
+    this.datal = datal;
+    this.Show = function () {
+      document.write(`Вывод значения из объекта с помощью функции (способ №2)<br> ${this.datal}`);
+    }
+  }
+  let obj = new vvf('Виталий Валентинович');
+  obj.Show();
+  </script>
+
+</body>
+</html>
